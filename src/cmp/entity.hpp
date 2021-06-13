@@ -26,7 +26,7 @@ struct Entity_t
     {
         auto type = CMP_t::getComponentTypeID();
         auto& it = m_components.find(type);
-        if (it != m_components.end)
+        if (it != m_components.end())
             return *(it->second);
         return nullptr;
     }
